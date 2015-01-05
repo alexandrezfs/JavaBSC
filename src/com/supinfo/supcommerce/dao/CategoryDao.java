@@ -1,0 +1,20 @@
+package com.supinfo.supcommerce.dao;
+
+import com.supinfo.supcommerce.entity.Category;
+
+import java.util.List;
+
+/**
+ * @author Alexandre Nguyen <alex.nr@hotmail.co.jp>
+ */
+public interface CategoryDao {
+    void save(Category category);
+
+    Category getById(Long idCategory);
+
+    List<Category> getAll();
+
+    Category getWithProduct(Long id);
+
+    void updateCategory(Category category);
+}
